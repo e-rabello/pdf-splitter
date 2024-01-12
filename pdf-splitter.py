@@ -1,6 +1,7 @@
 from PyPDF2 import PdfWriter, PdfReader
 
-inputpdf = PdfReader(open("relatorio.pdf", "rb"))
+# edit with your own 'file name'.pdf
+inputpdf = PdfReader(open("document.pdf", "rb"))
 
 for i in range(len(inputpdf.pages)):
     output = PdfWriter()
